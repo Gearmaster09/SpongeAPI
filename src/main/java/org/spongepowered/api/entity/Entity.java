@@ -28,7 +28,6 @@ import com.flowpowered.math.vector.Vector3d;
 import org.spongepowered.api.data.DataHolder;
 import org.spongepowered.api.data.DataObject;
 import org.spongepowered.api.data.manipulator.TargetedLocationData;
-import org.spongepowered.api.data.marker.GameData;
 import org.spongepowered.api.util.Identifiable;
 import org.spongepowered.api.util.RelativePositions;
 import org.spongepowered.api.world.Location;

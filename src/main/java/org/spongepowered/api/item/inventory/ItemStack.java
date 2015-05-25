@@ -26,7 +26,6 @@ package org.spongepowered.api.item.inventory;
 
 import org.spongepowered.api.data.DataHolder;
 import org.spongepowered.api.data.DataObject;
-import org.spongepowered.api.data.marker.GameData;
 import org.spongepowered.api.item.ItemType;
 
 /**
