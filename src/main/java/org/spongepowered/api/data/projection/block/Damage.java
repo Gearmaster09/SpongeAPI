@@ -26,13 +26,10 @@ package org.spongepowered.api.data.projection.block;
 
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
 public class Damage extends DataProjection {
 
-    public static final Value<Integer> DAMAGE = Values.DAMAGE;
-
-    public final BoundValue<Integer> damage = bind(DAMAGE);
+    public final BoundValue<Integer> damage = bind(Values.DAMAGE);
 
 }

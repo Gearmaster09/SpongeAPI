@@ -27,14 +27,11 @@ package org.spongepowered.api.data.projection.block;
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.type.TreeType;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
 // TODO naming
 public class TreeVariant extends DataProjection {
 
-    public static final Value<TreeType> TREE_TYPE = Values.TREE_TYPE;
-
-    public final BoundValue<TreeType> treeType = bind(TREE_TYPE);
+    public final BoundValue<TreeType> treeType = bind(Values.TREE_TYPE);
 
 }

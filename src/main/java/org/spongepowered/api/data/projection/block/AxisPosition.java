@@ -26,14 +26,11 @@ package org.spongepowered.api.data.projection.block;
 
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 import org.spongepowered.api.util.Axis;
 
 public class AxisPosition extends DataProjection {
 
-    public static final Value<Axis> AXIS = Values.AXIS;
-
-    public final BoundValue<Axis> axis = bind(AXIS);
+    public final BoundValue<Axis> axis = bind(Values.AXIS);
 
 }

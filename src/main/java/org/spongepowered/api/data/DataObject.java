@@ -25,6 +25,7 @@
 package org.spongepowered.api.data;
 
 import com.google.common.base.Optional;
+import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.value.*;
 
 /**
@@ -71,6 +72,24 @@ public interface DataObject {
      * @return This object
      */
     <E> DataObject set(SetterValue<E> value, E result);
+
+    /**
+     * Restricts to some type
+     *
+     * @param clazz The class to restrict to
+     * @param <T> The type of class to restrict to
+     * @return This object
+     */
+    <T extends DataProjection> T restrict(Class<T> clazz);
+
+    /**
+     * Copy of data of some type
+     *
+     * @param clazz The class to restrict to
+     * @param <T> The type of class to restrict to
+     * @return This object
+     */
+    <T extends DataProjection> T copyOf(Class<T> clazz);
 
     /**
      * Copies all keys from the given data object to those which are supported in the current data object.

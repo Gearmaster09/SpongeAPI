@@ -26,13 +26,10 @@ package org.spongepowered.api.data.projection.block;
 
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
 public class LiquidLevel extends DataProjection {
 
-    public static Value<Integer> LIQUID_LEVEL = Values.LIQUID_LEVEL;
-
-    public final BoundValue<Integer> liquidLevel = bind(LIQUID_LEVEL);
+    public final BoundValue<Integer> liquidLevel = bind(Values.LIQUID_LEVEL);
 
 }

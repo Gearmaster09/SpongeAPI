@@ -26,13 +26,10 @@ package org.spongepowered.api.data.projection.block;
 
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
 public class Extended extends DataProjection {
 
-    public static final Value<Boolean> EXTENDED = Values.EXTENDED;
-
-    public final BoundValue<Boolean> extended = bind(EXTENDED);
+    public final BoundValue<Boolean> extended = bind(Values.EXTENDED);
 
 }

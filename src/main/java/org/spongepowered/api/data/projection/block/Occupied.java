@@ -26,13 +26,10 @@ package org.spongepowered.api.data.projection.block;
 
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
-public class Occupied extends DataProjection {
+public class Occupied extends DataProjection {;
 
-    public static final Value<Boolean> IS_OCCUPIED = Values.IS_OCCUPIED;
-
-    public final BoundValue<Boolean> occupied = bind(IS_OCCUPIED);
+    public final BoundValue<Boolean> occupied = bind(Values.IS_OCCUPIED);
 
 }

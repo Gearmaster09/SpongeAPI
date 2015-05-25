@@ -26,13 +26,10 @@ package org.spongepowered.api.data.projection.block;
 
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
 public class Snowy extends DataProjection {
 
-    public static final Value<Boolean> HAS_SNOW = Values.HAS_SNOW;
-
-    public final BoundValue<Boolean> hasSnow = bind(HAS_SNOW);
+    public final BoundValue<Boolean> hasSnow = bind(Values.HAS_SNOW);
 
 }

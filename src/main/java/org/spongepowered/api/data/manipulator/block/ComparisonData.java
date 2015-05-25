@@ -26,11 +26,11 @@ package org.spongepowered.api.data.manipulator.block;
 
 import org.spongepowered.api.block.tileentity.Comparator;
 import org.spongepowered.api.data.manipulator.SingleValueData;
-import org.spongepowered.api.data.type.Comparison;
+import org.spongepowered.api.data.type.ComparisonMode;
 
 /**
  * Represents the {@link Comparator} data.
  */
-public interface ComparisonData extends SingleValueData<Comparison, ComparisonData> {
+public interface ComparisonData extends SingleValueData<ComparisonMode, ComparisonData> {
 
 }

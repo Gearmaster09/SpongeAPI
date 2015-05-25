@@ -22,17 +22,12 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.spongepowered.api.data.projection.block;
+package org.spongepowered.api.data.type;
 
-import org.spongepowered.api.data.projection.DataProjection;
-import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
-import org.spongepowered.api.data.value.Values;
+import org.spongepowered.api.CatalogType;
+import org.spongepowered.api.util.annotation.CatalogedBy;
 
-public class Triggereable extends DataProjection {
-
-    public static final Value<Boolean> TRIGGERED = Values.TRIGGERED;
-
-    public final BoundValue<Boolean> triggered = bind(TRIGGERED);
+@CatalogedBy(ComparisonModes.class)
+public interface ComparisonMode extends CatalogType {
 
 }

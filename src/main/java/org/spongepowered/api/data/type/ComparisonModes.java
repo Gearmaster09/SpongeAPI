@@ -24,10 +24,12 @@
  */
 package org.spongepowered.api.data.type;
 
-import org.spongepowered.api.CatalogType;
-import org.spongepowered.api.util.annotation.CatalogedBy;
+public final class ComparisonModes {
 
-@CatalogedBy(Comparisons.class)
-public interface Comparison extends CatalogType {
+    public static final ComparisonMode COMPARE = null;
+    public static final ComparisonMode SUBTRACT = null;
+
+    private ComparisonModes() {
+    }
 
 }

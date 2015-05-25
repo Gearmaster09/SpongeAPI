@@ -26,14 +26,11 @@ package org.spongepowered.api.data.projection.block;
 
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
 public class Decayable extends DataProjection {
 
-    public static final Value<Boolean> WILL_DECAY = Values.WILL_DECAY;
-
-    public final BoundValue<Boolean> willDecay = bind(WILL_DECAY);
+    public final BoundValue<Boolean> willDecay = bind(Values.WILL_DECAY);
 
     // TODO check decay?
 

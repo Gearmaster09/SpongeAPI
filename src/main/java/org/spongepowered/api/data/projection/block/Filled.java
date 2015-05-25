@@ -26,13 +26,10 @@ package org.spongepowered.api.data.projection.block;
 
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
 public class Filled extends DataProjection {
 
-    public static final Value<Boolean> IS_FILLED = Values.IS_FILLED;
-
-    public final BoundValue<Boolean> isFilled = bind(IS_FILLED);
+    public final BoundValue<Boolean> isFilled = bind(Values.IS_FILLED);
 
 }

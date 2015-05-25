@@ -25,16 +25,12 @@
 package org.spongepowered.api.data.projection.block;
 
 import org.spongepowered.api.data.projection.DataProjection;
-import org.spongepowered.api.data.type.DirtType;
 import org.spongepowered.api.data.type.DoublePlantType;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
 public class DoublePlantVariant extends DataProjection {
 
-    public static Value<DoublePlantType> DOUBLE_PLANT_TYPE = Values.DOUBLE_PLANT_TYPE;
-
-    public final BoundValue<DoublePlantType> doublePlantType = bind(DOUBLE_PLANT_TYPE);
+    public final BoundValue<DoublePlantType> doublePlantType = bind(Values.DOUBLE_PLANT_TYPE);
 
 }

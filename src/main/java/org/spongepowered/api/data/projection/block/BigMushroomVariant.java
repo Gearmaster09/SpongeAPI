@@ -27,13 +27,10 @@ package org.spongepowered.api.data.projection.block;
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.type.BigMushroomType;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
 public class BigMushroomVariant extends DataProjection {
 
-    public static Value<BigMushroomType> BIG_MUSHROOM_TYPE = Values.BIG_MUSHROOM_TYPE;
-
-    public final BoundValue<BigMushroomType> bigMushroomType = bind(BIG_MUSHROOM_TYPE);
+    public final BoundValue<BigMushroomType> bigMushroomType = bind(Values.BIG_MUSHROOM_TYPE);
 
 }

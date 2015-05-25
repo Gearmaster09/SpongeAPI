@@ -94,4 +94,26 @@ public class Values {
 
     public static final Value<Boolean> EXTENDED = null;
 
+    public static final Value<PrismarineType> PRISMARINE_TYPE = null;
+
+    public static final Value<QuartzType> QUARTZ_TYPE = null;
+
+    public static final Value<RailDirection> RAIL_DIRECTION = null;
+
+    public static final Value<SandstoneType> SANDSTONE_TYPE = null;
+
+    public static final Value<ComparisonMode> COMPARISON_MODE = null;
+
+    public static final Value<Boolean> IS_LOCKED = null;
+
+    public static final Value<Integer> DELAY = null;
+
+    public static final Value<WireAttachmentType> ATTACHED_NORTH = null;
+
+    public static final Value<WireAttachmentType> ATTACHED_EAST = null;
+
+    public static final Value<WireAttachmentType> ATTACHED_SOUTH = null;
+
+    public static final Value<WireAttachmentType> ATTACHED_WEST = null;
+
 }

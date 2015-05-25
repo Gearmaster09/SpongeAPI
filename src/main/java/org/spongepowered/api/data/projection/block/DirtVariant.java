@@ -27,13 +27,10 @@ package org.spongepowered.api.data.projection.block;
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.type.DirtType;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
 public class DirtVariant extends DataProjection {
 
-    public static Value<DirtType> DIRT_TYPE = Values.DIRT_TYPE;
-
-    public final BoundValue<DirtType> dirtType = bind(DIRT_TYPE);
+    public final BoundValue<DirtType> dirtType = bind(Values.DIRT_TYPE);
 
 }

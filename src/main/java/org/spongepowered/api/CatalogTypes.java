@@ -35,7 +35,7 @@ import org.spongepowered.api.data.type.BodyPart;
 import org.spongepowered.api.data.type.BrickType;
 import org.spongepowered.api.data.type.Career;
 import org.spongepowered.api.data.type.CoalType;
-import org.spongepowered.api.data.type.Comparison;
+import org.spongepowered.api.data.type.ComparisonMode;
 import org.spongepowered.api.data.type.CookedFish;
 import org.spongepowered.api.data.type.DirtType;
 import org.spongepowered.api.data.type.DisguisedBlockType;
@@ -115,7 +115,7 @@ public final class CatalogTypes {
     public static final Class<Career> CAREER = Career.class;
     public static final Class<ChatType> CHAT_TYPE = ChatType.class;
     public static final Class<CoalType> COAL_TYPE = CoalType.class;
-    public static final Class<Comparison> COMPARISON_TYPE = Comparison.class;
+    public static final Class<ComparisonMode> COMPARISON_TYPE = ComparisonMode.class;
     public static final Class<CookedFish> COOKED_FISH = CookedFish.class;
     public static final Class<Criterion> CRITERION = Criterion.class;
     public static final Class<Difficulty> DIFFICULTY = Difficulty.class;

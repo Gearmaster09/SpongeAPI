@@ -22,14 +22,14 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.spongepowered.api.data.type;
+package org.spongepowered.api.data.projection.block;
 
-public final class Comparisons {
+import org.spongepowered.api.data.projection.DataProjection;
+import org.spongepowered.api.data.value.BoundValue;
+import org.spongepowered.api.data.value.Values;
 
-    public static final Comparison COMPARE = null;
-    public static final Comparison SUBTRACT = null;
+public class Triggerable extends DataProjection {
 
-    private Comparisons() {
-    }
+    public final BoundValue<Boolean> triggered = bind(Values.TRIGGERED);
 
 }

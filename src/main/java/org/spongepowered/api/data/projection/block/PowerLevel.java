@@ -26,13 +26,10 @@ package org.spongepowered.api.data.projection.block;
 
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
 public class PowerLevel extends DataProjection {
 
-    public static Value<Integer> POWER_LEVEL = Values.POWER_LEVEL;
-
-    public final BoundValue<Integer> powerLevel = bind(POWER_LEVEL);
+    public final BoundValue<Integer> powerLevel = bind(Values.POWER_LEVEL);
 
 }

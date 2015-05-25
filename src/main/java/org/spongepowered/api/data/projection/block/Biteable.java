@@ -26,13 +26,10 @@ package org.spongepowered.api.data.projection.block;
 
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
 public class Biteable extends DataProjection {
 
-    public static final Value<Integer> BITES = Values.BITES;
-
-    public final BoundValue<Integer> bites = bind(BITES);
+    public final BoundValue<Integer> bites = bind(Values.BITES);
 
 }

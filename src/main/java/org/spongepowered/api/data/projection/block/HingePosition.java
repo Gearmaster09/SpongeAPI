@@ -27,13 +27,10 @@ package org.spongepowered.api.data.projection.block;
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.type.Hinge;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
 public class HingePosition extends DataProjection {
 
-    public static final Value<Hinge> HINGE = Values.HINGE;
-
-    public final BoundValue<Hinge> hinge = bind(HINGE);
+    public final BoundValue<Hinge> hinge = bind(Values.HINGE);
 
 }

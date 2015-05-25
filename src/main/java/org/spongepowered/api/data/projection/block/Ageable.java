@@ -26,13 +26,10 @@ package org.spongepowered.api.data.projection.block;
 
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
 public class Ageable extends DataProjection {
 
-    public static final Value<Integer> AGE = Values.AGE;
-
-    public final BoundValue<Integer> age = bind(AGE);
+    public final BoundValue<Integer> age = bind(Values.AGE);
 
 }

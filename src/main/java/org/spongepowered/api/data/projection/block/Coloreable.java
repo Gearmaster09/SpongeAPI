@@ -27,13 +27,10 @@ package org.spongepowered.api.data.projection.block;
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.type.DyeColor;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
 public class Coloreable extends DataProjection {
 
-    public static Value<DyeColor> COLOR  = Values.COLOR;
-
-    public final BoundValue<DyeColor> color = bind(COLOR);
+    public final BoundValue<DyeColor> color = bind(Values.COLOR);
 
 }

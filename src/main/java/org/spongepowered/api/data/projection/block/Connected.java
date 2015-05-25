@@ -26,18 +26,9 @@ package org.spongepowered.api.data.projection.block;
 
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
 public class Connected extends DataProjection {
-
-    public static final Value<Boolean> CONNECTED_NORTH = Values.CONNECTED_NORTH;
-
-    public static final Value<Boolean> CONNECTED_EAST = Values.CONNECTED_EAST;
-
-    public static final Value<Boolean> CONNECTED_SOUTH = Values.CONNECTED_SOUTH;
-
-    public static final Value<Boolean> CONNECTED_WEST = Values.CONNECTED_WEST;
 
     public final BoundValue<Boolean> connectedNorth = bind(Values.CONNECTED_NORTH);
 

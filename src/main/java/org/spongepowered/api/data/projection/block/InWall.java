@@ -26,13 +26,10 @@ package org.spongepowered.api.data.projection.block;
 
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
 public class InWall extends DataProjection {
 
-    public static final Value<Boolean> IN_WALL = Values.IN_WALL;
-
-    public final BoundValue<Boolean> inWall = bind(IN_WALL);
+    public final BoundValue<Boolean> inWall = bind(Values.IN_WALL);
 
 }

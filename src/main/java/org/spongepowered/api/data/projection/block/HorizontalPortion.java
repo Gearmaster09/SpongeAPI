@@ -27,13 +27,10 @@ package org.spongepowered.api.data.projection.block;
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.type.HorizontalPortionType;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
 public class HorizontalPortion extends DataProjection {
 
-    public static final Value<HorizontalPortionType> HORIZONTAL_PORTION = Values.HORIZONTAL_PORTION;
-
-    public final BoundValue<HorizontalPortionType> horizontalPortion = bind(HORIZONTAL_PORTION);
+    public final BoundValue<HorizontalPortionType> horizontalPortion = bind(Values.HORIZONTAL_PORTION);
 
 }

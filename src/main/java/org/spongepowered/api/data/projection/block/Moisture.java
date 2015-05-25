@@ -26,13 +26,10 @@ package org.spongepowered.api.data.projection.block;
 
 import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Value;
 import org.spongepowered.api.data.value.Values;
 
 public class Moisture extends DataProjection {
 
-    public static final Value<Integer> MOISTURE = Values.MOISTURE;
-
-    public final BoundValue<Integer> moisture = bind(MOISTURE);
+    public final BoundValue<Integer> moisture = bind(Values.MOISTURE);
 
 }
