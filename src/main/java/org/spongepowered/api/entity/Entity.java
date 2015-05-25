@@ -55,7 +55,7 @@ import java.util.UUID;
  *
  * <p>Blocks and items (when they are in inventories) are not entities.</p>
  */
-public interface Entity extends Identifiable, DataHolder, DataObject<GameData> {
+public interface Entity extends Identifiable, DataHolder, DataObject {
 
     /**
      * Get the type of entity.

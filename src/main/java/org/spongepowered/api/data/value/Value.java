@@ -24,7 +24,6 @@
  */
 package org.spongepowered.api.data.value;
 
-import org.spongepowered.api.data.DataObject;
 import org.spongepowered.api.util.annotation.CatalogedBy;
 
 /**

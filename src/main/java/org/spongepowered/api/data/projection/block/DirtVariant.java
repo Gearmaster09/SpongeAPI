@@ -22,34 +22,18 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.spongepowered.api.data.projection;
+package org.spongepowered.api.data.projection.block;
 
-import org.spongepowered.api.data.DataObject;
+import org.spongepowered.api.data.projection.DataProjection;
+import org.spongepowered.api.data.type.DirtType;
 import org.spongepowered.api.data.value.BoundValue;
 import org.spongepowered.api.data.value.Value;
+import org.spongepowered.api.data.value.Values;
 
-import java.util.ArrayList;
-import java.util.List;
+public class DirtVariant extends DataProjection {
 
-public class DataProjection {
+    public static Value<DirtType> DIRT_TYPE = Values.DIRT_TYPE;
 
-    private DataObject dataObject;
-    private List<BoundValue> values = new ArrayList<BoundValue>();
-
-    public DataProjection() {}
-
-    protected <V> BoundValue<V> bind(Value<V> value) {
-        BoundValue<V> bound = BoundValue.of(value, this);
-        this.values.add(bound);
-        return bound;
-    }
-
-    private void setDataObject(DataObject dataObject) {
-        this.dataObject = dataObject;
-    }
-
-    public <V> V get(Value<V> value) {
-        return dataObject.tryGet(value);
-    }
+    public final BoundValue<DirtType> dirtType = bind(DIRT_TYPE);
 
 }

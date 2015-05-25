@@ -22,34 +22,29 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.spongepowered.api.data.projection;
+package org.spongepowered.api.data.projection.block;
 
-import org.spongepowered.api.data.DataObject;
+import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.value.BoundValue;
 import org.spongepowered.api.data.value.Value;
+import org.spongepowered.api.data.value.Values;
 
-import java.util.ArrayList;
-import java.util.List;
+public class Connected extends DataProjection {
 
-public class DataProjection {
+    public static final Value<Boolean> CONNECTED_NORTH = Values.CONNECTED_NORTH;
 
-    private DataObject dataObject;
-    private List<BoundValue> values = new ArrayList<BoundValue>();
+    public static final Value<Boolean> CONNECTED_EAST = Values.CONNECTED_EAST;
 
-    public DataProjection() {}
+    public static final Value<Boolean> CONNECTED_SOUTH = Values.CONNECTED_SOUTH;
 
-    protected <V> BoundValue<V> bind(Value<V> value) {
-        BoundValue<V> bound = BoundValue.of(value, this);
-        this.values.add(bound);
-        return bound;
-    }
+    public static final Value<Boolean> CONNECTED_WEST = Values.CONNECTED_WEST;
 
-    private void setDataObject(DataObject dataObject) {
-        this.dataObject = dataObject;
-    }
+    public final BoundValue<Boolean> connectedNorth = bind(Values.CONNECTED_NORTH);
 
-    public <V> V get(Value<V> value) {
-        return dataObject.tryGet(value);
-    }
+    public final BoundValue<Boolean> connectedEast = bind(Values.CONNECTED_EAST);
+
+    public final BoundValue<Boolean> connectedSouth = bind(Values.CONNECTED_SOUTH);
+
+    public final BoundValue<Boolean> connectedWest = bind(Values.CONNECTED_WEST);
 
 }

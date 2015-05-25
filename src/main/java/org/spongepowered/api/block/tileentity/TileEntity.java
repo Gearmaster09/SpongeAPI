@@ -45,7 +45,7 @@ import org.spongepowered.api.world.Location;
  * customizable data associated with a {@link TileEntity} is represented by
  * {@link org.spongepowered.api.data.DataManipulator}.</p>
  */
-public interface TileEntity extends DataHolder, DataObject<GameData> {
+public interface TileEntity extends DataHolder, DataObject {
 
     /**
      * Checks for whether the tile entity is currently valid or not.

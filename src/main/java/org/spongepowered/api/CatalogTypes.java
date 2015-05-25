@@ -39,7 +39,7 @@ import org.spongepowered.api.data.type.Comparison;
 import org.spongepowered.api.data.type.CookedFish;
 import org.spongepowered.api.data.type.DirtType;
 import org.spongepowered.api.data.type.DisguisedBlockType;
-import org.spongepowered.api.data.type.DoubleSizePlantType;
+import org.spongepowered.api.data.type.DoublePlantType;
 import org.spongepowered.api.data.type.DyeColor;
 import org.spongepowered.api.data.type.Fish;
 import org.spongepowered.api.data.type.GoldenApple;
@@ -122,7 +122,7 @@ public final class CatalogTypes {
     public static final Class<DimensionType> DIMENSION_TYPE = DimensionType.class;
     public static final Class<DirtType> DIRT_TYPE = DirtType.class;
     public static final Class<DisguisedBlockType> DISGUSED_BLOCK_TYPE = DisguisedBlockType.class;
-    public static final Class<DoubleSizePlantType> DOUBLE_SIZE_PLANT_TYPE = DoubleSizePlantType.class;
+    public static final Class<DoublePlantType> DOUBLE_SIZE_PLANT_TYPE = DoublePlantType.class;
     public static final Class<DyeColor> DYE_COLOR = DyeColor.class;
     public static final Class<Enchantment> ENCHANTMENT = Enchantment.class;
     public static final Class<EntityInteractionType> ENTITY_INTERACTION_TYPE = EntityInteractionType.class;

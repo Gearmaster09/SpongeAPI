@@ -22,34 +22,17 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.spongepowered.api.data.projection;
+package org.spongepowered.api.data.projection.block;
 
-import org.spongepowered.api.data.DataObject;
+import org.spongepowered.api.data.projection.DataProjection;
 import org.spongepowered.api.data.value.BoundValue;
 import org.spongepowered.api.data.value.Value;
+import org.spongepowered.api.data.value.Values;
 
-import java.util.ArrayList;
-import java.util.List;
+public class Moisture extends DataProjection {
 
-public class DataProjection {
+    public static final Value<Integer> MOISTURE = Values.MOISTURE;
 
-    private DataObject dataObject;
-    private List<BoundValue> values = new ArrayList<BoundValue>();
-
-    public DataProjection() {}
-
-    protected <V> BoundValue<V> bind(Value<V> value) {
-        BoundValue<V> bound = BoundValue.of(value, this);
-        this.values.add(bound);
-        return bound;
-    }
-
-    private void setDataObject(DataObject dataObject) {
-        this.dataObject = dataObject;
-    }
-
-    public <V> V get(Value<V> value) {
-        return dataObject.tryGet(value);
-    }
+    public final BoundValue<Integer> moisture = bind(MOISTURE);
 
 }

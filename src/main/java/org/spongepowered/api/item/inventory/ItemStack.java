@@ -37,7 +37,7 @@ import org.spongepowered.api.item.ItemType;
  * use {@link DataHolder#getData(Class)} to retrieve different information
  * regarding this item stack.</p>
  */
-public interface ItemStack extends DataHolder, DataObject<GameData> {
+public interface ItemStack extends DataHolder, DataObject {
 
     /**
      * Gets the {@link ItemType} of this {@link ItemStack}.

@@ -22,21 +22,17 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.spongepowered.api.data.type;
+package org.spongepowered.api.data.projection.block;
 
-/**
- * An enumeration of known vanilla {@link DoubleSizePlantType}s.
- */
-public final class DoubleSizePlantTypes {
+import org.spongepowered.api.data.projection.DataProjection;
+import org.spongepowered.api.data.value.BoundValue;
+import org.spongepowered.api.data.value.Value;
+import org.spongepowered.api.data.value.Values;
 
-    public static final DoubleSizePlantType SUNFLOWER = null;
-    public static final DoubleSizePlantType SYRINGA = null;
-    public static final DoubleSizePlantType GRASS = null;
-    public static final DoubleSizePlantType FERN = null;
-    public static final DoubleSizePlantType ROSE = null;
-    public static final DoubleSizePlantType PAEONIA = null;
+public class Enabled extends DataProjection {
 
-    private DoubleSizePlantTypes() {
-    }
+    public static final Value<Boolean> ENABLED = Values.ENABLED;
+
+    public final BoundValue<Boolean> enabled = bind(ENABLED);
 
 }

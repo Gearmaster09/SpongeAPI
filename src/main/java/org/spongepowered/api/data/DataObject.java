@@ -60,7 +60,7 @@ public interface DataObject {
      * @param <E> The type of value
      * @return The value
      */
-    <E> E tryGet(GetterValue<E> value, Class<E> valueClass);
+    <E> E tryGet(GetterValue<E> value);
 
     /**
      * Sets some value.

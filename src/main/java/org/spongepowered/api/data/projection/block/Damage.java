@@ -22,15 +22,17 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.spongepowered.api.data.type;
+package org.spongepowered.api.data.projection.block;
 
-import org.spongepowered.api.CatalogType;
-import org.spongepowered.api.util.annotation.CatalogedBy;
+import org.spongepowered.api.data.projection.DataProjection;
+import org.spongepowered.api.data.value.BoundValue;
+import org.spongepowered.api.data.value.Value;
+import org.spongepowered.api.data.value.Values;
 
-/**
- * Represents a type of double plant.
- */
-@CatalogedBy(DoubleSizePlantTypes.class)
-public interface DoubleSizePlantType extends CatalogType {
+public class Damage extends DataProjection {
+
+    public static final Value<Integer> DAMAGE = Values.DAMAGE;
+
+    public final BoundValue<Integer> damage = bind(DAMAGE);
 
 }
