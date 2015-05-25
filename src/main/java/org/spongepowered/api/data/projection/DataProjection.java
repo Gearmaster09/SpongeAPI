@@ -1,4 +1,4 @@
-package org.spongepowered.api.data.component;
+package org.spongepowered.api.data.projection;
 
 import org.spongepowered.api.data.DataObject;
 import org.spongepowered.api.data.value.BoundValue;
@@ -7,12 +7,12 @@ import org.spongepowered.api.data.value.Value;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Component {
+public class DataProjection {
 
     private DataObject dataObject;
     private List<BoundValue> values = new ArrayList<BoundValue>();
 
-    public Component() {}
+    public DataProjection() {}
 
     protected <V> BoundValue<V> bind(Value<V> value) {
         BoundValue<V> bound = BoundValue.of(value, this);
@@ -24,7 +24,7 @@ public class Component {
         this.dataObject = dataObject;
     }
 
-    DataObject getDataObject() {
+    public DataObject getDataObject() {
         return dataObject;
     }
 
