@@ -22,15 +22,30 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.spongepowered.api.data.projection.block;
+package org.spongepowered.api.data.projection;
 
-import org.spongepowered.api.data.projection.DataProjection;
-import org.spongepowered.api.data.type.ComparisonMode;
 import org.spongepowered.api.data.value.BoundValue;
-import org.spongepowered.api.data.value.Values;
+import org.spongepowered.api.data.value.Value;
 
-public class ComparisonVariant extends DataProjection {
+import java.util.HashMap;
+import java.util.Map;
 
-    public BoundValue<ComparisonMode> comparisonMode = bind(Values.COMPARISON_MODE);
+public class MappedDataProjection<K, V> extends DataProjection {
+
+    private Map<K, BoundValue<V>> valueMap = new HashMap<K, BoundValue<V>>();
+
+    protected BoundValue<V> bind(K key, Value<V> value) {
+        BoundValue<V> bound = super.bind(value);
+        valueMap.put(key, bound);
+        return bound;
+    }
+
+    public BoundValue<V> on(K key) {
+        return valueMap.get(key);
+    }
+
+    public boolean has(K key) {
+        return valueMap.containsKey(key);
+    }
 
 }

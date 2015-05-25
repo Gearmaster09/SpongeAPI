@@ -24,18 +24,19 @@
  */
 package org.spongepowered.api.data.projection.block;
 
-import org.spongepowered.api.data.projection.DataProjection;
+import org.spongepowered.api.data.projection.MappedDataProjection;
 import org.spongepowered.api.data.value.BoundValue;
 import org.spongepowered.api.data.value.Values;
+import org.spongepowered.api.util.Direction;
 
-public class Connected extends DataProjection {
+public class Connected extends MappedDataProjection<Direction, Boolean> {
 
-    public final BoundValue<Boolean> connectedNorth = bind(Values.CONNECTED_NORTH);
+    public final BoundValue<Boolean> connectedNorth = bind(Direction.NORTH, Values.CONNECTED_NORTH);
 
-    public final BoundValue<Boolean> connectedEast = bind(Values.CONNECTED_EAST);
+    public final BoundValue<Boolean> connectedEast = bind(Direction.EAST, Values.CONNECTED_EAST);
 
-    public final BoundValue<Boolean> connectedSouth = bind(Values.CONNECTED_SOUTH);
+    public final BoundValue<Boolean> connectedSouth = bind(Direction.SOUTH, Values.CONNECTED_SOUTH);
 
-    public final BoundValue<Boolean> connectedWest = bind(Values.CONNECTED_WEST);
+    public final BoundValue<Boolean> connectedWest = bind(Direction.WEST, Values.CONNECTED_WEST);
 
 }

@@ -38,8 +38,8 @@ public class DataProjection {
 
     public DataProjection() {}
 
-    protected <V> BoundValue<V> bind(Value<V> value) {
-        BoundValue<V> bound = BoundValue.of(value, this);
+    protected <E> BoundValue<E> bind(Value<E> value) {
+        BoundValue<E> bound = BoundValue.of(value, this);
         this.values.add(bound);
         return bound;
     }
@@ -48,7 +48,7 @@ public class DataProjection {
         this.dataObject = dataObject;
     }
 
-    public <V> V get(Value<V> value) {
+    public <E> E get(Value<E> value) {
         return dataObject.tryGet(value);
     }
 

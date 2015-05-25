@@ -1,19 +1,44 @@
+/*
+ * This file is part of SpongeAPI, licensed under the MIT License (MIT).
+ *
+ * Copyright (c) SpongePowered <https://www.spongepowered.org>
+ * Copyright (c) contributors
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
 package org.spongepowered.api.data.projection.block;
 
-import org.spongepowered.api.data.projection.DataProjection;
+import org.spongepowered.api.data.projection.MappedDataProjection;
 import org.spongepowered.api.data.type.WireAttachmentType;
 import org.spongepowered.api.data.value.BoundValue;
 import org.spongepowered.api.data.value.Values;
+import org.spongepowered.api.util.Direction;
 
-public class WireAttachable extends DataProjection {
+public class WireAttachable extends MappedDataProjection<Direction, WireAttachmentType> {
 
-    public final BoundValue<WireAttachmentType> attachedNorth = bind(Values.ATTACHED_NORTH);
+    public final BoundValue<WireAttachmentType> attachedNorth = bind(Direction.NORTH, Values.ATTACHED_NORTH);
 
-    public final BoundValue<WireAttachmentType> attachedEast = bind(Values.ATTACHED_EAST);
+    public final BoundValue<WireAttachmentType> attachedEast = bind(Direction.EAST, Values.ATTACHED_EAST);
 
-    public final BoundValue<WireAttachmentType> attachedSouth = bind(Values.ATTACHED_SOUTH);
+    public final BoundValue<WireAttachmentType> attachedSouth = bind(Direction.SOUTH, Values.ATTACHED_SOUTH);
 
-    public final BoundValue<WireAttachmentType> attachedWest = bind(Values.ATTACHED_WEST);
+    public final BoundValue<WireAttachmentType> attachedWest = bind(Direction.WEST, Values.ATTACHED_WEST);
 
 
 }
