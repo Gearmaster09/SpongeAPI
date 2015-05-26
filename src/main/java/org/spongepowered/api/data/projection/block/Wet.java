@@ -24,5 +24,12 @@
  */
 package org.spongepowered.api.data.projection.block;
 
-public class Delayable {
+import org.spongepowered.api.data.projection.DataProjection;
+import org.spongepowered.api.data.value.BoundValue;
+import org.spongepowered.api.data.value.Values;
+
+public class Wet extends DataProjection {
+
+    public final BoundValue<Boolean> isWet = bind(Values.IS_WET);
+
 }

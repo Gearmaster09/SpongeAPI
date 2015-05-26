@@ -116,4 +116,20 @@ public class Values {
 
     public static final Value<WireAttachmentType> ATTACHED_WEST = null;
 
+    public static final Value<SandType> SAND_TYPE = null;
+
+    public static final Value<StoneType> STONE_TYPE = null;
+
+    public static final Value<Boolean> SHOULD_DROP = null;
+
+    public static final Value<Integer> LAYER = null;
+
+    public static final Value<Boolean> IS_WET = null;
+
+    public static final Value<StairShape> STAIR_SHAPE = null;
+
+    public static final Value<BrickType> BRICK_TYPE = null;
+
+    public static final Value<Boolean> IS_SEAMLESS = null;
+
 }
